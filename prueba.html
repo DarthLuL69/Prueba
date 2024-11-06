@@ -21,7 +21,20 @@
       <a href="#band" class="py-4 px-2 text-white hover:text-blue-600 transition duration-300">Cantante</a>
       <a href="#tour" class="py-4 px-2 text-white hover:text-blue-600 transition duration-300">Concierto</a>
       <a href="#contact" class="py-4 px-2 text-white hover:text-blue-600 transition duration-300">Contacto</a>
+      <a href="#tickets" class="py-4 px-2 text-white hover:text-blue-600 transition duration-300">Tickets</a>
     </div>
+    <div class="md:hidden">
+      <button id="menu-button" class="text-white focus:outline-none">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+  </div>
+  <div id="menu" class="hidden md:hidden">
+    <a href="#" class="block py-2 px-4 text-white">Inicio</a>
+    <a href="#band" class="block py-2 px-4 text-white">Cantante</a>
+    <a href="#tour" class="block py-2 px-4 text-white">Concierto</a>
+    <a href="#contact" class="block py-2 px-4 text-white">Contacto</a>
+    <a href="#tickets" class="block py-2 px-4 text-white">Tickets</a>
   </div>
 </nav>
 
@@ -36,10 +49,10 @@
   </div>
 </section>
 
-<!-- Playboycarti-->
+<!-- Playboycarti Section -->
 <section id="band" class="py-20 bg-cover bg-center bg-no-repeat" style="background-image: url('Fondobanda.jpg');">
   <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl font- text-white mb-8">Playboycarti</h2>
+    <h2 class="text-3xl font-bold text-white mb-8">Playboycarti</h2>
     <p class="mb-8 text-white">Jordan Terrell Carter, conocido por su nombre artístico Playboi Carti, es un rapero, compositor y productor discográfico estadounidense. Es una figura influyente entre su generación, ha contribuido a la progresión de la música rage y trap.​</p>
     <div class="grid md:grid-cols-1 gap-6">
       <div class="text-center">
@@ -64,6 +77,22 @@
         <p class="text-white">Dom 29 Nov 2016</p>
         <button class="bg-black bg-opacity-60 text-white py-2 px-4 mt-4 rounded-full hover:bg-opacity-70 transition duration-300">Comprar Tickets</button>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ticket Section -->
+<section id="tickets" class="py-20 bg-cover bg-center bg-no-repeat" style="background-image: url('Fondobanda.jpg');">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-white mb-8"><i class="fa fa-ticket"></i> Tickets</h2>
+    <p class="text-white mb-8">¡Compra tus boletos para el concierto de Playboi Carti!</p>
+    <div class="max-w-lg mx-auto">
+      <p class="text-left mb-4"><label class="block text-white"><i class="fa fa-ticket"></i> Tickets, $15 por persona</label></p>
+      <input type="number" class="appearance-none block w-full bg-transparent text-gray-300 border border-gray-600 rounded py-3 px-4 mb-4 leading-tight focus:outline-none focus:border-gray-300" placeholder="¿Cuántos?">
+      <p class="text-left mb-4"><label class="block text-white"><i class="fa fa-envelope"></i> Enviar a</label></p>
+      <input type="email" class="appearance-none block w-full bg-transparent text-gray-300 border border-gray-600 rounded py-3 px-4 mb-4 leading-tight focus:outline-none focus:border-gray-300" placeholder="Introduce tu correo electrónico">
+      <button class="bg-black bg-opacity-60 text-white py-2 px-4 rounded-full w-full hover:bg-opacity-70 transition duration-300 mb-4">Pagar <i class="fa fa-credit-card"></i></button>
+      <p class="text-sm text-gray-400">¿Necesitas <a href="#" class="text-blue-400 hover:underline">ayuda?</a></p>
     </div>
   </div>
 </section>
@@ -100,6 +129,12 @@
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="text-blue-400 hover:text-blue-600">w3.css</a></p>
   </div>
 </footer>
+<!--Eh añadido un sccript para que se desplique el menu cuando se enpequeñezca la pagina-->
+<script>
+  document.getElementById('menu-button').addEventListener('click', function() {
+    document.getElementById('menu').classList.toggle('hidden');
+  });
+</script>
 
 </body>
 </html>
