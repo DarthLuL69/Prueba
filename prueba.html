@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Sitio de la Banda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=cutive-mono:400">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Navbar -->
+<nav class="absolute top-0 left-0 w-full z-10 bg-black bg-opacity-30">
+  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center py-4">
+    <a href="#" class="py-4 px-2">
+      <img src="Logo.png" alt="LOGO" class="h-8">
+    </a>
+    <div class="hidden md:flex space-x-4">
+      <a href="#" class="py-4 px-2 text-white font-semibold">Inicio</a>
+      <a href="#band" class="py-4 px-2 text-white hover:text-blue-600 transition duration-300">Cantante</a>
+      <a href="#tour" class="py-4 px-2 text-white hover:text-blue-600 transition duration-300">Concierto</a>
+      <a href="#contact" class="py-4 px-2 text-white hover:text-blue-600 transition duration-300">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-cover bg-center bg-no-repeat bg-white py-32 text-center" style="background-image: url('Banner.jpg');">
+  <div class="container mx-auto px-6">
+    <div class="bg-black bg-opacity-50 p-10 rounded-lg inline-block mt-10">
+      <h2 class="text-4xl font-bold mb-2 text-white">Bienvenidos al Concierto de Playboycarti</h2>
+      <h3 class="text-2xl mb-8 text-white">¡2024 MUSIC!</h3>
+      <button class="bg-black bg-opacity-60 text-white py-2 px-4 rounded-full hover:bg-opacity-70 transition duration-300">Comprar Tickets</button>
+    </div>
+  </div>
+</section>
+
+<!-- Playboycarti-->
+<section id="band" class="py-20 bg-cover bg-center bg-no-repeat" style="background-image: url('Fondobanda.jpg');">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font- text-white mb-8">Playboycarti</h2>
+    <p class="mb-8 text-white">Jordan Terrell Carter, conocido por su nombre artístico Playboi Carti, es un rapero, compositor y productor discográfico estadounidense. Es una figura influyente entre su generación, ha contribuido a la progresión de la música rage y trap.​</p>
+    <div class="grid md:grid-cols-1 gap-6">
+      <div class="text-center">
+        <img src="Playboycarti.jpeg" alt="Playboycarti" class="mx-auto rounded-full mb-4">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The Tour Section -->
+<section id="tour" class="py-20 bg-cover bg-center bg-no-repeat" style="background-image: url('FondoTour.jpg');">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-white mb-8">Fechas de la Gira</h2>
+    <p class="mb-8 text-white">¡Recuerda reservar tus entradas!</p>
+    <ul class="space-y-4 mb-8">
+      <li class="text-white font-semibold">Noviembre - <span class="text-red-600">Agotadas</span></li>
+    </ul>
+    <div class="grid md:grid-cols-1 gap-6">
+      <div class="text-center">
+        <img src="Chicago.jpg" alt="Chicago" class="mx-auto rounded mb-4" style="width: 100%; max-width: 400px;">
+        <h4 class="text-xl font-semibold text-white">Chicago</h4>
+        <p class="text-white">Dom 29 Nov 2016</p>
+        <button class="bg-black bg-opacity-60 text-white py-2 px-4 mt-4 rounded-full hover:bg-opacity-70 transition duration-300">Comprar Tickets</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-cover bg-center bg-no-repeat" style="background-image: url('Fondobanda.jpg');">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-white mb-8">Contáctanos</h2>
+    <form class="w-full max-w-lg mx-auto">
+      <div class="mb-6">
+        <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-email">Correo Electrónico</label>
+        <input class="appearance-none block w-full bg-transparent text-gray-300 border border-gray-600 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-300" id="grid-email" type="email" placeholder="Gmail.com">
+      </div>
+      <div class="mb-6">
+        <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-message">Mensaje</label>
+        <textarea class="appearance-none block w-full bg-transparent text-gray-300 border border-gray-600 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-300" id="grid-message" rows="5" placeholder="Escribenos un mensaje..."></textarea>
+      </div>
+      <button class="bg-black bg-opacity-60 text-white py-2 px-4 rounded-full hover:bg-opacity-70 transition duration-300">Enviar Mensaje</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black py-6">
+  <div class="container mx-auto px-6 text-center text-gray-300">
+    <div class="flex justify-center space-x-4 mb-4">
+      <a href="#" class="hover:text-white"><i class="fa fa-facebook-official"></i></a>
+      <a href="#" class="hover:text-white"><i class="fa fa-instagram"></i></a>
+      <a href="#" class="hover:text-white"><i class="fa fa-snapchat"></i></a>
+      <a href="#" class="hover:text-white"><i class="fa fa-pinterest-p"></i></a>
+      <a href="#" class="hover:text-white"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="hover:text-white"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="text-blue-400 hover:text-blue-600">w3.css</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
